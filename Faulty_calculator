@@ -1,0 +1,25 @@
+##Faulty Calculator
+
+
+inp1=int(input("Enter the first number :"))
+ope = (input("Enter the operator (select from ['+','-','*','/']) :"))
+inp2=int(input("Enter the second number :"))
+if  (ope in ['+','-','*','/']) and (inp1 in [i for i in range(100000)]) and (inp1 in [i for i in range(100000)]) :
+    if inp1==45 and ope== '*' and inp2==3 :
+        print(555)
+    elif inp1==56 and ope== '+' and inp2==9 :
+        print(77)
+    elif inp1==56 and ope== '/ 'and inp2==6 :
+        print(4)
+    elif ope =='+' :
+        print(inp1+inp2)
+    elif ope =='-' :
+        print(inp1-inp2)
+    elif ope == '*':
+        print(inp1*inp2)
+    elif ope == '/' :
+        print(inp1/inp2)
+else:
+     print('invalid input')
+
+
