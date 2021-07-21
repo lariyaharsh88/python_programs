@@ -1,0 +1,22 @@
+## Guess_a_number_in_9_chances
+
+num = 18
+i=9
+
+while i>0:
+    num1 = int(input("Guess a number : "))
+    if num1 == num:
+        print("Congratulations you guessed correct")
+        i = i - 1
+        print("you solved in " + str(8-(i-1)) + "guesses")
+        break
+    elif num1 > num:
+        print("your number is greater than the given no.")
+        i = i - 1
+        print("you are left with " + str(i) + "guesses")
+    elif num1 < num:
+        print("your number is smaller than the given no.")
+        i = i - 1
+        print("you are left with " + str(i) + "guesses")
+if i==0:
+    print("game over")
