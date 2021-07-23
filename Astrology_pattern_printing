@@ -1,0 +1,16 @@
+#Astrology - pattern printing
+
+n= int(input("Enter a number : "))
+b= int(input("Enter 0 for true and 1 for false :"))
+if b==0 :
+    for i in range(n+1):
+        print('*'*i)
+elif b==1:
+     for i in range(n,0,-1):
+        a= str('*'*i)
+        print(a[::-1])
+else:
+    print("Enter either 0 or 1 only")
+
+
+
